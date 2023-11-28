@@ -94,3 +94,18 @@ func taskSeven1(str: String){
 }
 var stringSeven: () = taskSeven1(str: "wejuae;rnv;aenfv;kajkajfnb")
 print(stringSeven)
+
+
+// Задание 8: Максимум из трех чисел
+
+
+func taskEight(z: Int, x: Int, c: Int) -> [Int] {
+    let nums8 = [z,x,c]
+    return nums8
+}
+
+var num8 = taskEight(z: 53, x: 8, c: 88)
+
+print("Максимальное число в массиве \(num8.max()!)")
+                                          
+
