@@ -19,3 +19,15 @@ func taskTwo() -> Bool {
 }
 
 taskTwo() == true ? print("Число делится на 3 без остатка") : print("Число не делится на 3 без остатка")
+
+
+// Задание 3: Массив из 100 чисел
+
+func taskThree() -> [Int] {
+    var array = [Int](0...100)
+    return array
+}
+
+let arrayThree = taskThree()
+var delete = arrayThree.filter {$0 % 2 != 0 && $0 % 3 == 0}
+print(delete)
