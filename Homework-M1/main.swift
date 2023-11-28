@@ -31,3 +31,18 @@ func taskThree() -> [Int] {
 let arrayThree = taskThree()
 var delete = arrayThree.filter {$0 % 2 != 0 && $0 % 3 == 0}
 print(delete)
+
+
+//Задание 4: Числа Фибоначчи
+
+func taskFour() -> [Int]{
+   var arrayFour = [0,1]
+   
+   for _ in 2..<50 {
+       let numFour = arrayFour[arrayFour.count - 1] + arrayFour[arrayFour.count - 2]
+       arrayFour.append(numFour)
+   }
+   return arrayFour
+}
+var task4 = taskFour()
+print("Числа Фебоначчи: \(task4)")
