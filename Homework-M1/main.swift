@@ -46,3 +46,14 @@ func taskFour() -> [Int]{
 }
 var task4 = taskFour()
 print("Числа Фебоначчи: \(task4)")
+
+
+// Задание 5: Факториал числа
+  
+func taskFive (_ numFive:Int) -> Int{
+    numFive == 0 || numFive == 1 ? 1 : numFive * taskFive(numFive - 1)
+}
+
+let factorial = 4
+let result = taskFive(factorial)
+print(result)
