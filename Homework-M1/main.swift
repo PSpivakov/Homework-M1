@@ -1,11 +1,11 @@
-//
-//  main.swift
-//  Homework-M1
-//
-//  Created by Pavlo Spivakov on 28.11.23.
-//
-
 import Foundation
 
-print("Hello, World!")
+// Задание 1: Четность числа
 
+var nummberOne = 39
+
+func taskOne() -> Bool {
+    nummberOne % 2 == 0 ? true : false
+}
+
+taskOne() == true ? print("Число четное") : print("Число нечетное")
