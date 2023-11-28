@@ -90,3 +90,15 @@ for i in 1 ... 10 {
     print(i)
 }
 
+
+// 9. Задание: Логическое "И" (&&)
+let firstBool = true
+let secondBool = true
+
+
+if firstBool && secondBool {
+    print("Оба условия выполняются")
+} else {
+    print("Не все условия выполняются")
+}
+
