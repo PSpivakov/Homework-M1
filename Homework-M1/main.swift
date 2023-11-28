@@ -39,3 +39,11 @@ if age >= 18 && ticket == true {
     print("Доступ запрещен")
 }
 
+// 4. Задание: Работа со строками
+let name = "Diego"
+let secondName = "Fernandos"
+let surname = "Alvarez"
+
+
+print("\(name)" + " \(secondName)" + " \(surname)")
+
