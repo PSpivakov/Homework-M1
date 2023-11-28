@@ -57,3 +57,31 @@ func taskFive (_ numFive:Int) -> Int{
 let factorial = 4
 let result = taskFive(factorial)
 print(result)
+
+
+// Задание 6: Простой калькулятор
+
+var numSix1 = 35
+var numSix2 = 2
+var operation = "/"
+//Необходимо ввести тип операции (сложение "+", вычитание "-", умножение"*", деление "/")
+//Иначе функция вернет 0
+
+func calculatorResult() -> Int {
+    if operation == "+" {
+        numSix1 + numSix2
+    } else if operation == "-" {
+        numSix1 - numSix2
+    } else if operation == "*" {
+        numSix1 * numSix2
+    } else if operation == "/" {
+        if numSix1 != 0 && numSix2 != 0 {
+            numSix1 / numSix2
+        } else {
+            0
+        }
+    } else {
+        0
+    }
+}
+print("Результат вычислений \(calculatorResult())")
