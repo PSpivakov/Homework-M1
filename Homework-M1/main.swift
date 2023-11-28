@@ -47,3 +47,19 @@ let surname = "Alvarez"
 
 print("\(name)" + " \(secondName)" + " \(surname)")
 
+
+// 5. Задание: Операции с числами
+let numberOne = 32
+let numberTwo = 19
+
+let additionNum = numberOne + numberTwo
+let subtractionNum = numberOne - numberTwo
+let multiplicationNum = numberOne * numberTwo
+let divisionNum = numberOne / numberTwo
+
+print("Сложение чисел = \(additionNum)")
+print("Вычитание чисел = \(subtractionNum)")
+print("Произведение чисел = \(multiplicationNum)")
+print("Деление чисел = \(divisionNum)")
+
+
