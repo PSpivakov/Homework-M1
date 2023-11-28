@@ -27,4 +27,15 @@ if number % 2 == 0 {
     print("Число нечетное")
 }
 
+// 3. Задание: Доступ на мероприятие
+var age = 39
+
+let ticket = false
+
+
+if age >= 18 && ticket == true {
+    print("Добро пожаловать!")
+} else {
+    print("Доступ запрещен")
+}
 
