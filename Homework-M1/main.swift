@@ -85,3 +85,12 @@ func calculatorResult() -> Int {
     }
 }
 print("Результат вычислений \(calculatorResult())")
+
+
+// Задание 7: Длина строки
+
+func taskSeven1(str: String){
+    print("Длинна строки равна \(str.count) символам")
+}
+var stringSeven: () = taskSeven1(str: "wejuae;rnv;aenfv;kajkajfnb")
+print(stringSeven)
