@@ -73,3 +73,8 @@ var additionTwo = secondNum + 0.2934828957
 print("Double = \(additionOne) \nFloat = \(additionTwo)")
 
 
+// 7. Задание: Условные операторы и возраст
+var age = 16
+
+age >= 18 ? print("Вы достигли совершеннолетия") : print("Вы не достигли совершеннолетия")
+
