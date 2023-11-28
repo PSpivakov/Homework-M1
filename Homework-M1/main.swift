@@ -109,3 +109,17 @@ var num8 = taskEight(z: 53, x: 8, c: 88)
 print("Максимальное число в массиве \(num8.max()!)")
                                           
 
+// Задание 9: Реверс строки
+
+ func reveStr(text: String) -> String {
+    var rText = String()
+    
+    for character in text {
+        rText.insert(character, at: rText.startIndex)
+    }
+    return rText
+    }
+
+
+var str = reveStr(text: "abcdefghijklmnopqrstuvwxyz")
+    print("\(str)")
