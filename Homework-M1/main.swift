@@ -63,3 +63,13 @@ print("Произведение чисел = \(multiplicationNum)")
 print("Деление чисел = \(divisionNum)")
 
 
+// 6. Задание: Точность чисел с плавающей запятой
+var firstNum = 39.185936501958275
+var secondNum :Float = 39.185936501958275
+
+var additionOne = firstNum + 0.2934828957
+var additionTwo = secondNum + 0.2934828957
+
+print("Double = \(additionOne) \nFloat = \(additionTwo)")
+
+
