@@ -121,3 +121,18 @@ let number = 41
 number % 2 != 1 ? print("Число четное") : print("Число нечетное")
 
 
+// 12. Задание: Комбинация операторов
+let isAdult = true
+let hasTicket = true
+
+if hasTicket || isAdult {
+    if isAdult && hasTicket {
+        print("Добро пожаловать!")
+    } else if hasTicket == false {
+        print("Доступ запрещен. Нет билета")
+    } else if isAdult == false {
+        print("Доступ запрещен. Несовершеннолетний")
+    } else {
+        print("Доступ запрещен")
+    }
+}
