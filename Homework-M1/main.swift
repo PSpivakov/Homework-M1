@@ -102,3 +102,16 @@ if firstBool && secondBool {
     print("Не все условия выполняются")
 }
 
+
+// 10.  Задание: Логическое "ИЛИ" (||)
+let firstBool = false
+let secondBool = false
+
+
+if firstBool || secondBool {
+    print("Хотя бы одно из условий выполняется")
+} else {
+    print("Оба условия ложны")
+}
+
+
