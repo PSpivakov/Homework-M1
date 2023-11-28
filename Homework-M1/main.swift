@@ -115,3 +115,9 @@ if firstBool || secondBool {
 }
 
 
+// 11. Задание: Логическое отрицание (!)
+let number = 41
+
+number % 2 != 1 ? print("Число четное") : print("Число нечетное")
+
+
