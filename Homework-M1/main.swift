@@ -50,3 +50,14 @@ func summArray(array x: [Int]) -> Int {
 var array3 = [2, 9, 8, 25, 31, 1, 4]
 let task3 = summArray(array: array3)
 print("Сумма элементов массива равна \(task3)")
+
+
+//Задание 4: Конвертация температуры
+
+func convertTemperature(celsius: Double) -> Double {
+    (celsius * 9.0/5.0) + 32.0
+}
+
+let task4 = convertTemperature(celsius: 24)
+print("Температура в градусах Фаренгейта \(task4)")
+
