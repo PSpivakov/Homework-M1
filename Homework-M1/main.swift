@@ -33,3 +33,20 @@ func palindrome(string str2: String) -> Bool {
 }
 let task2 = palindrome(string: "SOS")
 print("Проверка на палиндром \(task2)")
+
+
+//Задание 3: Сумма элементов массива
+
+
+func summArray(array x: [Int]) -> Int {
+    var summArray = 0
+    
+    for i in x {
+        summArray += i
+    }
+    return summArray
+}
+
+var array3 = [2, 9, 8, 25, 31, 1, 4]
+let task3 = summArray(array: array3)
+print("Сумма элементов массива равна \(task3)")
