@@ -61,3 +61,26 @@ func convertTemperature(celsius: Double) -> Double {
 let task4 = convertTemperature(celsius: 24)
 print("Температура в градусах Фаренгейта \(task4)")
 
+
+//Задание 5: Записная книжка
+
+func findContact(name: String, in x: [String]) -> String {
+    for (index, value) in x.enumerated() {
+        if value.hasPrefix(name) {
+            return x[index]
+        }
+    }
+    return ""
+}
+
+
+var contact = [
+    "Alex, +491602147120943, ABrenig@gmail.com",
+    "Aigul, +4916024872487, Aigul37232@icloud.com",
+    "Stefanie, +491604678347523, Stefi1274@gmail.com",
+    "Kosteloni, +4916032572839542, kostelion238@gmail.com",
+    "Vadeilo, +49160238472398, Vadilonu@gmail.com"
+    ]
+
+let task5 = findContact(name: "Stefanie", in: contact)
+print("Данные контакта по поисковому запросу: \(task5)")
