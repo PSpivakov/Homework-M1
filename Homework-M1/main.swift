@@ -23,3 +23,13 @@ func sortNum(array: [Int]) -> [Int] {
 var numArray1 = [29, 81, 8, 35, 74, 1, 0, 78, 99, 23]
 let resultSort1 = sortNum(array: numArray1)
 print("Отсортированный массив с числами \(resultSort1)")
+
+
+//Задание 2: Проверка палиндрома
+
+ 
+func palindrome(string str2: String) -> Bool {
+    str2 == String(str2.reversed())
+}
+let task2 = palindrome(string: "SOS")
+print("Проверка на палиндром \(task2)")
