@@ -100,3 +100,17 @@ func changePos(array: [String]) -> [String] {
 let array6 = ["a", "x", "b", "e", "d"]
 let task6 = changePos(array: array6)
 print(task6)
+
+
+//Задание 7: Форматирование строки
+
+func upWord(_ a: String) -> String {
+    var bigUp = [String]()
+    for i in a.split(separator: " ") {
+       bigUp.append(String(i.capitalized))
+    }
+    return bigUp.joined(separator: " ")
+}
+
+let task7 = upWord("я приехал сегодня слишком поздно домой, и поэтому я не успел сделать все домашнее задание")
+print(task7)
