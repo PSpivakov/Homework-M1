@@ -172,3 +172,23 @@ let task92 = ["e", "f"]
 let task9 = addArray(task91: task91, task92: task92)
 print("Результат слияния массивов \(task9)")
 
+
+//Задание 11: Подсчет гласных
+
+func glasnieString(_ a: String) -> Int {
+    var num11 = Int()
+    
+  //  for _ in str {
+    let glasnie: [Character] = ["a", "e", "i", "o", "u", "y"]
+        for i in a {
+            if glasnie.contains(i) {
+                num11 += 1
+            }
+      // }
+    }
+
+    return num11
+}
+
+let task11 = glasnieString("seeyou")
+print(task11)
