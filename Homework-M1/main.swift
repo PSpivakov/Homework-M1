@@ -220,3 +220,21 @@ func summBeforeN(num n: Int) -> Int {
     
 let task13 = summBeforeN(num: 8)
 print("Сумма всех чисел до n равна \(task13)")
+
+
+//14. Задание: Длинное слово в строке
+
+func longWord(str a: String) -> String {
+    var word = String()
+    let separatorStr = a.split(separator: " ")
+    
+    for i in separatorStr {
+        if i.count > separatorStr.count {
+            word = String(i)
+        }
+    }
+    return word
+}
+    
+let task14 = longWord(str: "Добро пожаловать на пати")
+print("Самое длинное слово в строке: \(task14)")
