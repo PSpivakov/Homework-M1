@@ -192,3 +192,16 @@ func glasnieString(_ a: String) -> Int {
 
 let task11 = glasnieString("seeyou")
 print(task11)
+
+
+// Задание 12: Удаление дубликатов из массива
+
+func dublicateFilter() -> [Int] {
+    
+    let unique = Array(Set(task12))
+    return unique
+}
+
+let task12 = [2, 5, 6, 2, 3, 5, 7, 7, 8, 9,10]
+let num12 = dublicateFilter()
+print(num12)
