@@ -158,3 +158,17 @@ func symbol(string a: String) -> Bool {
 
 let task9 = symbol(string: "Побегу домой")
 print("Строка состоит из уникальных символов? \(task9)")
+
+
+//Задание 9: Слияние массивов
+
+func addArray(task91: [String], task92: [String]) -> [String] {
+    task91 + task92
+}
+
+let task91 = ["a", "b", "c", "d"]
+let task92 = ["e", "f"]
+
+let task9 = addArray(task91: task91, task92: task92)
+print("Результат слияния массивов \(task9)")
+
