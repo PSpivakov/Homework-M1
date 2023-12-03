@@ -84,3 +84,19 @@ var contact = [
 
 let task5 = findContact(name: "Stefanie", in: contact)
 print("Данные контакта по поисковому запросу: \(task5)")
+
+
+// Задание 6: Перестановка элементов массива
+
+func changePos(array: [String]) -> [String] {
+    var posChange = array6
+
+    let temp = posChange.last
+    posChange[posChange.count - 1] = posChange[0]
+    guard let temp else { return [] }
+    posChange[0] = temp
+    return posChange
+}
+let array6 = ["a", "x", "b", "e", "d"]
+let task6 = changePos(array: array6)
+print(task6)
