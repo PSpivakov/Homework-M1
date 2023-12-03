@@ -114,3 +114,38 @@ func upWord(_ a: String) -> String {
 
 let task7 = upWord("я приехал сегодня слишком поздно домой, и поэтому я не успел сделать все домашнее задание")
 print(task7)
+
+
+//Задание 8: Конвертация дня недели
+
+
+func tagInWoche(tag: String) -> Int {
+    switch tag {
+        
+    case "Montag":
+        return 1
+        
+    case "Dienstag":
+        return 2
+        
+    case "Mitwoch":
+        return 3
+        
+    case "Donnerstag":
+        return 4
+        
+    case "Freitag":
+        return 5
+        
+    case "Samstag":
+        return 6
+        
+    case "Sonntag":
+        return 7
+        
+    default: return 0
+    }
+}
+
+let task8 = tagInWoche(tag: "Freitag")
+print("Прошло дней с начала недели \(task8)")
