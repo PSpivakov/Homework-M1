@@ -205,3 +205,18 @@ func dublicateFilter() -> [Int] {
 let task12 = [2, 5, 6, 2, 3, 5, 7, 7, 8, 9,10]
 let num12 = dublicateFilter()
 print(num12)
+
+
+//Задание 13: Сумма всех чисел до N
+
+func summBeforeN(num n: Int) -> Int {
+    var numRes = Int()
+    
+    for i in  1 ..< n {
+        numRes += i
+    }
+    return numRes
+}
+    
+let task13 = summBeforeN(num: 8)
+print("Сумма всех чисел до n равна \(task13)")
