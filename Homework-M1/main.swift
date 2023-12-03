@@ -149,3 +149,12 @@ func tagInWoche(tag: String) -> Int {
 
 let task8 = tagInWoche(tag: "Freitag")
 print("Прошло дней с начала недели \(task8)")
+
+//Задание 9: Уникальные символы
+
+func symbol(string a: String) -> Bool {
+    Set(a).count == a.count
+}
+
+let task9 = symbol(string: "Побегу домой")
+print("Строка состоит из уникальных символов? \(task9)")
