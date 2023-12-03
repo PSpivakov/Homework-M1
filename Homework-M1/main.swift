@@ -160,7 +160,7 @@ let task9 = symbol(string: "Побегу домой")
 print("Строка состоит из уникальных символов? \(task9)")
 
 
-//Задание 9: Слияние массивов
+//Задание 10: Слияние массивов
 
 func addArray(task91: [String], task92: [String]) -> [String] {
     task91 + task92
