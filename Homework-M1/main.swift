@@ -253,3 +253,16 @@ func kurz(string y: String, number x: Int) -> String {
 
 let task15 = kurz(string: "Bundeskanzler", number: 8)
 print("Результат сокращения строки: \(task15)")
+
+
+//16. Задание: Объединение двух массивов без дубликатов
+
+func twoArrays(array161: [Int], array162: [Int]) -> [Int] {
+    Array(Set(array161 + array162)).sorted()
+}
+
+let arr161 = [1, 4, 6, 8, 0, 10, 7]
+let arr162 = [6, 7, 3, 0, 2, 10, 8, 1]
+
+let task16 = twoArrays(array161: arr161, array162: arr162)
+print("Результат объединения двух массивов \(task16)")
