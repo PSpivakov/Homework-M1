@@ -266,3 +266,21 @@ let arr162 = [6, 7, 3, 0, 2, 10, 8, 1]
 
 let task16 = twoArrays(array161: arr161, array162: arr162)
 print("Результат объединения двух массивов \(task16)")
+
+
+//Задание 17: Количество слов заданной длины
+
+func numString(string y: String, number x: Int) -> Int {
+    var long = Int()
+
+    for i in y.split(separator: " ") {
+        if i.count == x {
+            long += 1
+        }
+    }
+
+    return long
+}
+
+let task17 = numString(string: "Шла Саша по шоссе и сосала соску", number: 5)
+print("Количество слов заданной длины в строке равно \(task17)")
