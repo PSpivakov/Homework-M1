@@ -238,3 +238,18 @@ func longWord(str a: String) -> String {
     
 let task14 = longWord(str: "Добро пожаловать на пати")
 print("Самое длинное слово в строке: \(task14)")
+
+
+//Задание 15: Сокращение строки
+
+
+func kurz(string y: String, number x: Int) -> String {
+    if x > 0 {
+        String(y.dropLast(x)) + "..."
+    } else {
+        y
+    }
+}
+
+let task15 = kurz(string: "Bundeskanzler", number: 8)
+print("Результат сокращения строки: \(task15)")
