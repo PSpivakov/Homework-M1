@@ -316,3 +316,35 @@ func guessNumm() {
 
 
 guessNumm()
+
+// задание 19: Простой шифратор и дешифратор слов
+
+func enigma(_ input: String) -> String {
+    var result = ""
+
+    for char in input {
+        if let unicodeScalar = char.unicodeScalars.first {
+            let value = unicodeScalar.value
+            let encodedValue = 219 - value
+            let encodedChar = String(UnicodeScalar(encodedValue)!)
+            result.append(encodedChar)
+        } else {
+            result.append(char)
+        }
+    }
+
+    return result
+}
+
+func deshifrator(_ input: String) -> String {
+    return enigma(input)
+}
+
+let originalMessage = "Some text"
+print("Оригинал: \(originalMessage)")
+
+let encryptedMessage = enigma(originalMessage)
+print("Шифр: \(encryptedMessage)")
+
+let decryptedMessage = deshifrator(encryptedMessage)
+print("Результат: \(decryptedMessage)")
