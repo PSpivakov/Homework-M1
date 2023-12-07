@@ -284,3 +284,35 @@ func numString(string y: String, number x: Int) -> Int {
 
 let task17 = numString(string: "Шла Саша по шоссе и сосала соску", number: 5)
 print("Количество слов заданной длины в строке равно \(task17)")
+
+
+//Задание 18: Угадай число
+
+func guessNumm() {
+    let numm = Int.random(in: 1...100)
+    var attempts = 0
+    var isGuessed = false
+
+    print("Угадай число от 1 до 100.")
+
+    while !isGuessed {
+        attempts += 1
+        print("Пытка попытка №\(attempts). Ты что не можешь угадать?")
+
+        if let input = readLine(), let guess = Int(input) {
+            if guess == numm {
+                isGuessed = true
+                print("Хм ты угадал число \(numm) за \(attempts) попыток.")
+            } else if guess < numm {
+                print("Твое число меньше загаданного")
+            } else {
+                print("Твое число больше загаданного")
+            }
+        } else {
+            print("Введи число!")
+        }
+    }
+}
+
+
+guessNumm()
