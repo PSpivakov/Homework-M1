@@ -348,3 +348,15 @@ print("Шифр: \(encryptedMessage)")
 
 let decryptedMessage = deshifrator(encryptedMessage)
 print("Результат: \(decryptedMessage)")
+
+
+//Задание 20: Функция вывода каждого слова строки на новой строке
+
+func wordInLine(_ str: String) {
+    let words = str.split(separator: " ")
+    for i in words {
+        print(i)
+    }
+}
+
+wordInLine("Мы можем тут многое написать но каждое слово будет в новой строке")
