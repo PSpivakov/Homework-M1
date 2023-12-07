@@ -384,3 +384,17 @@ let testSentence = "Какой такой интервал?"
 let interval: TimeInterval = 1.0
 
 printInterval(sentence: testSentence, interval: interval)
+
+
+//Задание 22. Конвертация времени из секунд в часы, минуты и секунды
+
+func convZeit(seconds t: Int) {
+    let seconds = t % 60
+    let minutes = t / 60 % 60
+    let hours = t / 3600
+
+    print("\(hours) часов, \(minutes) минут, \(seconds) секунда")
+
+}
+
+convZeit(seconds: 884422)
