@@ -360,3 +360,27 @@ func wordInLine(_ str: String) {
 }
 
 wordInLine("Мы можем тут многое написать но каждое слово будет в новой строке")
+
+
+//Задание 21: Функция вывода каждого слова через определенный интервал времени
+
+func printInterval(sentence: String, interval: TimeInterval) {
+    let words = sentence.components(separatedBy: " ")
+    var currentIndex = 0
+    let queue = DispatchQueue(label: "wordPrintQueue", qos: .utility, attributes: .concurrent)
+   
+    let workItem = DispatchWorkItem {
+        while currentIndex < words.count {
+            print(words[currentIndex])
+            currentIndex += 1
+            Thread.sleep(forTimeInterval: interval)
+        }
+    }
+
+    queue.async(execute: workItem)
+}
+
+let testSentence = "Какой такой интервал?"
+let interval: TimeInterval = 1.0
+
+printInterval(sentence: testSentence, interval: interval)
